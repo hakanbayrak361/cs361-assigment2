@@ -3,4 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-my_entry = ["Find Flying Web Sites", "Find Cheap Ticket", "Find Best Airport", "Find The Best Airlines"]
+class my_blog(models.Model):
+
+    name = models.CharField(max_length=220)
+    description = models.CharField(max_length=520)

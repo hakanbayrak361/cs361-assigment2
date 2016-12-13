@@ -1,5 +1,10 @@
+from __future__ import unicode_literals
 
 from django.db import models
 
 # Create your models here.
-my_todos = [("Find Flying Web Sites"," booking.com "), ("Find Cheap Ticket", "On Website"), ("Find Best Airport","Ataturk Airport"), ("Find The Best Airlines","Turkish Airlenes")]
+
+class Todo(models.Model):
+
+    name = models.CharField(max_length=220)
+    description = models.CharField(max_length=520)
